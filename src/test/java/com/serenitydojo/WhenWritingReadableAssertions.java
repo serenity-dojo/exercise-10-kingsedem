@@ -55,7 +55,7 @@ public class WhenWritingReadableAssertions {
         String color = "red";
 
         // Check that the string has a value of 'red'
-        assertThat(color).contains("red");
+        assertThat(color).isEqualTo("red");
     }
 
     @Test
@@ -129,10 +129,7 @@ public class WhenWritingReadableAssertions {
         List<String> colors = Arrays.asList("red","green","blue");
 
         // Check that the list contains "red","blue" and "green" in any order
-        assertThat(colors).containsExactlyInAnyOrder("red", "green", "blue");
+        assertThat(colors).containsExactlyInAnyOrder("red", "blue", "green");
     }
-
-
-
 
 }
